@@ -1,0 +1,11 @@
+// Exercício 11: Salário final de vendedor
+const salarioFixo = Number(prompt("Digite o salário fixo:"));
+const carrosVendidos = Number(prompt("Quantidade de carros vendidos:"));
+const valorPorCarro = Number(prompt("Valor da comissão por carro vendido:"));
+const totalVendas = Number(prompt("Valor total das vendas:"));
+
+const comissaoFixa = carrosVendidos * valorPorCarro;
+const comissaoPercentual = totalVendas * 0.05;
+const salarioFinal = salarioFixo + comissaoFixa + comissaoPercentual;
+
+console.log(`O salário final do vendedor é R$ ${salarioFinal.toFixed(2)}.`);
