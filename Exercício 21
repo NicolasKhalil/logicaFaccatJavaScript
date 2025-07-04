@@ -1,0 +1,7 @@
+function duracaoJogo(inicio, fim) {
+  if (inicio === fim) return 24;
+  return inicio < fim ? fim - inicio : (24 - inicio + fim);
+}
+
+// Exemplo:
+console.log(duracaoJogo(22, 6)); // Saída: 8
