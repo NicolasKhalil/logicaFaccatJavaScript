@@ -1,0 +1,13 @@
+function verificarSaldo(numeroConta, saldo, debito, credito) {
+  const saldoAtual = saldo - debito + credito;
+  const status = saldoAtual >= 0 ? "Saldo Positivo" : "Saldo Negativo";
+
+  return {
+    numeroConta,
+    saldoAtual,
+    status
+  };
+}
+
+// Exemplo:
+console.log(verificarSaldo(1234, 1000, 1200, 300));
