@@ -1,0 +1,17 @@
+function autenticarUsuario(codigoDigitado, senhaDigitada) {
+  const codigoCorreto = 1234;
+  const senhaCorreta = 9999;
+
+  if (codigoDigitado !== codigoCorreto) {
+    return "Usuário inválido!";
+  }
+
+  if (senhaDigitada !== senhaCorreta) {
+    return "Senha incorreta";
+  }
+
+  return "Acesso permitido";
+}
+
+// Exemplo:
+console.log(autenticarUsuario(1234, 9999)); // Saída: Acesso permitido
