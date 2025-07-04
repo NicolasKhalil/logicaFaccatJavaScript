@@ -1,0 +1,15 @@
+function salarioComComissao(salarioFixo, vendas) {
+  const limite = 1500;
+  let comissao;
+
+  if (vendas <= limite) {
+    comissao = vendas * 0.03;
+  } else {
+    comissao = (limite * 0.03) + ((vendas - limite) * 0.05);
+  }
+
+  return salarioFixo + comissao;
+}
+
+// Exemplo:
+console.log(salarioComComissao(1200, 2000)); // Salário com comissão escalonada
