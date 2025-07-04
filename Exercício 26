@@ -1,0 +1,7 @@
+function controleEstoque(qtdAtual, qtdMax, qtdMin) {
+  const media = (qtdMax + qtdMin) / 2;
+  return qtdAtual >= media ? "Não efetuar compra" : "Efetuar compra";
+}
+
+// Exemplo:
+console.log(controleEstoque(20, 50, 10)); // Saída: Efetuar compra
