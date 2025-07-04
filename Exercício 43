@@ -1,0 +1,23 @@
+function classificarTriangulo(a, b, c) {
+  let mensagem;
+
+  if (a < b + c && b < a + c && c < a + b) {
+    if (a === b && b === c) {
+      mensagem = "Triângulo Equilátero";
+    } else if (a === b || b === c || a === c) {
+      mensagem = "Triângulo Isósceles";
+    } else {
+      mensagem = "Triângulo Escaleno";
+    }
+  } else {
+    mensagem = "Não é possível formar um triângulo";
+  }
+
+  return mensagem;
+}
+
+// Exemplos:
+console.log(classificarTriangulo(3, 3, 3)); // Equilátero
+console.log(classificarTriangulo(3, 4, 3)); // Isósceles
+console.log(classificarTriangulo(5, 4, 3)); // Escaleno
+console.log(classificarTriangulo(1, 2, 3)); // Não é possível formar um triângulo
