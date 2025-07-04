@@ -1,0 +1,6 @@
+function ordenarTresValores(a, b, c) {
+  return [a, b, c].sort((x, y) => x - y);
+}
+
+// Exemplo:
+console.log(ordenarTresValores(9, 2, 5)); // Saída: [2, 5, 9]
