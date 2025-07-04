@@ -1,0 +1,33 @@
+function calcularTotalCompra(nomeProduto, quantidade, precoUnitario) {
+  const total = quantidade * precoUnitario;
+  let desconto;
+
+  if (quantidade <= 5) {
+    desconto = total * 0.02;
+  } else if (quantidade <= 10) {
+    desconto = total * 0.03;
+  } else {
+    desconto = total * 0.05;
+  }
+
+  const totalPagar = total - desconto;
+
+  return {
+    produto: nomeProduto,
+    total: total.toFixed(2),
+    desconto: desconto.toFixed(2),
+    totalPagar: totalPagar.toFixed(2)
+  };
+}
+
+// Exemplo:
+console.log(calcularTotalCompra("Teclado", 8, 50));
+/*
+Saída:
+{
+  produto: 'Teclado',
+  total: '400.00',
+  desconto: '12.00',
+  totalPagar: '388.00'
+}
+*/
