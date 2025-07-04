@@ -1,0 +1,6 @@
+function maiorValor(a, b) {
+  return a > b ? a : b;
+}
+
+// Exemplo:
+console.log(maiorValor(7, 10)); // Saída: 10
