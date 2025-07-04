@@ -1,0 +1,7 @@
+function compararValores(a, b) {
+  if (a === b) return "Números iguais";
+  return a > b ? "Primeiro é maior" : "Segundo maior";
+}
+
+// Exemplo:
+console.log(compararValores(10, 5)); // Saída: Primeiro é maior
