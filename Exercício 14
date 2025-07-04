@@ -1,0 +1,6 @@
+function verificaMaiorQue10(valor) {
+  return valor > 10 ? "É MAIOR QUE 10!" : "NÃO É MAIOR QUE 10!";
+}
+
+// Exemplo:
+console.log(verificaMaiorQue10(8)); // Saída: NÃO É MAIOR QUE 10!
