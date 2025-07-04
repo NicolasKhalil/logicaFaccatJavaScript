@@ -1,0 +1,6 @@
+// Exercício 9: Reajuste salarial
+const salarioAtual = Number(prompt("Digite o salário atual:"));
+const percentualReajuste = Number(prompt("Digite o percentual de reajuste (%):"));
+
+const novoSalario = salarioAtual + (salarioAtual * (percentualReajuste / 100));
+console.log(`O novo salário é R$ ${novoSalario.toFixed(2)}.`);
