@@ -1,0 +1,13 @@
+function salarioComHoraExtra(horasTrabalhadas, salarioHora) {
+  const horasNormais = 40 * 4; // 160 horas no mês
+  if (horasTrabalhadas <= horasNormais) {
+    return horasTrabalhadas * salarioHora;
+  } else {
+    const horasExtras = horasTrabalhadas - horasNormais;
+    const valorHoraExtra = salarioHora * 1.5;
+    return (horasNormais * salarioHora) + (horasExtras * valorHoraExtra);
+  }
+}
+
+// Exemplo:
+console.log(salarioComHoraExtra(170, 20)); // Salário com 10 horas extras
