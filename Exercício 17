@@ -1,0 +1,9 @@
+function verificarAprovacao(n1, n2) {
+  const media = (n1 + n2) / 2;
+  const status = media >= 6 ? "Aprovado" : "Reprovado";
+  return { media, status };
+}
+
+// Exemplo:
+console.log(verificarAprovacao(5, 7)); 
+// Saída: { media: 6, status: 'Aprovado' }
