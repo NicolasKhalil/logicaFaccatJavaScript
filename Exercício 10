@@ -1,0 +1,8 @@
+// Exercício 10: Custo final de um carro
+const custoFabrica = Number(prompt("Digite o custo de fábrica do carro:"));
+
+const percentualDistribuidor = 0.28;
+const percentualImpostos = 0.45;
+
+const custoFinal = custoFabrica + (custoFabrica * percentualDistribuidor) + (custoFabrica * percentualImpostos);
+console.log(`O custo final ao consumidor é R$ ${custoFinal.toFixed(2)}.`);
