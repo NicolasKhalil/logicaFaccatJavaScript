@@ -1,0 +1,8 @@
+function analisaNumero(valor) {
+  if (valor > 0) return "Positivo";
+  if (valor < 0) return "Negativo";
+  return "Zero";
+}
+
+// Exemplo:
+console.log(analisaNumero(0)); // Saída: Zero
