@@ -1,0 +1,7 @@
+function somaDoisMaiores(a, b, c) {
+  const valores = [a, b, c].sort((x, y) => y - x);
+  return valores[0] + valores[1];
+}
+
+// Exemplo:
+console.log(somaDoisMaiores(5, 8, 3)); // Saída: 13
