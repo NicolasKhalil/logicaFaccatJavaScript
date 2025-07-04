@@ -1,0 +1,7 @@
+function podeVotar(anoAtual, anoNascimento) {
+  const idade = anoAtual - anoNascimento;
+  return idade >= 16 ? "Pode votar" : "Não pode votar";
+}
+
+// Exemplo:
+console.log(podeVotar(2025, 2010)); // Saída: Não pode votar
