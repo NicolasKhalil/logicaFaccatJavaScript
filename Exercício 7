@@ -1,0 +1,7 @@
+// Exercício 7: Idade em dias
+const anos = Number(prompt("Digite sua idade em anos:"));
+const meses = Number(prompt("Digite os meses além dos anos:"));
+const dias = Number(prompt("Digite os dias além dos meses:"));
+
+const idadeEmDias = (anos * 365) + (meses * 30) + dias;
+console.log(`A idade em dias é ${idadeEmDias}.`);
